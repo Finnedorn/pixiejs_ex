@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Psyduck</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div class="icon-wrapper-left">
+        <img src="/img/icon-animated.png" alt="animated-icon">
+      </div>
+      <div class="icon-wrapper-right">
+        <img src="/img/icon-animated.png" alt="animated-icon">
+      </div>
+      <div class="logo-wrapper">
+        <img src="/img/title.png" alt="title-logo">
+      </div>
+      <div id="game-wrapper" class="mt-5">
+      </div>
+    </div>
+    <div id="explain-tab-default" class="position-relative explain-tab-wrapper pe-5 ">
+      <p class="explain-tab">
+        Oh no! alcuni Psyduck sono finiti in acqua!
+        Presto, tocca a te salvarli, clicca su ognuno di loro
+      </p>
+      <img src="/img/explain-tab.png" alt="Psyduck-tab" />
+    </div>
+    <div id="explain-tab-success" class="position-relative explain-tab-wrapper pe-5 d-none ">
+      <p class="explain-tab">
+        Complimenti! sei riuscit* a salvarli!
+        Premi di nuovo Play per giocare
+      </p>
+      <img src="/img/explain-tab-success.png" alt="Psyduck-tab-success" />
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

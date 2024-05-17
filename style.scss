@@ -1,0 +1,106 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+:root {
+    --font-grey: #6d7070;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+    margin-top: 250px;
+    position: relative;
+
+    .icon-wrapper-left {
+        position: absolute;
+        width: 100px;
+        left: 270px;
+        top: -180px;
+        animation-name: shake-idea-left;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+        animation-direction: alternate-reverse;
+    }
+
+    .icon-wrapper-right {
+        position: absolute;
+        width: 100px;
+        right: 250px;
+        top: -185px;
+        animation-name: shake-idea-right;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+        animation-direction: alternate-reverse;
+    }
+
+    .logo-wrapper {
+        top: -200px;
+        position: absolute;
+        width: 650px;
+        right: 320px;
+    }
+    
+    #game-wrapper {
+      height: 500px;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+}
+
+@keyframes shake-idea-right {
+    from {
+        transform: scaleX(-1) rotate(0deg);
+    }
+    to {
+        transform: scaleX(-1) rotate(20deg);    
+    }
+}
+
+@keyframes shake-idea-left {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+.explain-tab-wrapper {
+
+    width: 550px;
+    height: 500px;
+    margin: 0 auto;
+    animation-name: fade-load-bottom;
+    animation-duration: 1s;
+
+    .explain-tab {
+        width: 300px;
+        height: 500px;
+        position: absolute;
+        font-size: 1.5rem;
+        text-align: center;
+        top: 60px;
+        left: 130px;
+        color: var(--font-grey);
+    }
+}
+
+@keyframes fade-load-bottom {
+    from {
+        opacity: 0;
+        bottom: -20px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
