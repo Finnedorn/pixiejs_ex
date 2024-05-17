@@ -1,11 +1,12 @@
 @import "bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-
+// variabili
 :root {
     --font-grey: #6d7070;
 }
 
+// generali
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -15,6 +16,7 @@ img {
   width: 100%;
 }
 
+// titolo e canvas
 .container {
     margin-top: 250px;
     position: relative;
@@ -74,6 +76,7 @@ img {
     }
 }
 
+// tab di descrizione
 .explain-tab-wrapper {
 
     width: 550px;
