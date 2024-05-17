@@ -16,6 +16,12 @@ img {
   width: 100%;
 }
 
+body {
+  background-color: #1099bb;
+}
+
+
+
 // titolo e canvas
 .container {
     margin-top: 250px;
@@ -80,14 +86,12 @@ img {
 .explain-tab-wrapper {
 
     width: 550px;
-    height: 500px;
     margin: 0 auto;
     animation-name: fade-load-bottom;
     animation-duration: 1s;
 
     .explain-tab {
         width: 300px;
-        height: 500px;
         position: absolute;
         font-size: 1.5rem;
         text-align: center;
